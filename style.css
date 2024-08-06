@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: whitesmoke;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* height: 100vh;
+    width: 100%; */
+}
+
+.container{
+    max-width: 1600px;
+    padding: 0 16px;
+    /* overflow: hidden; */
+    margin: auto;
+}
+/* --------------------- TOP BAR ----------------- */
+
+.top-bar{
+    position: fixed;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 10px; */
+    padding: 5px 0;
+    color: black;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 70px;
+    opacity: 1;
+}
+
+.top-bar .logo{
+    margin-left: 25px;
+    width: 211px;
+    height: 48px;
+    /* background: transparent url('img/TestLogo.png') 0% 0% no-repeat padding-box; */
+    /* opacity: 1; */
+}
+
+.top-bar .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.top-bar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 10px;
+    font-weight: bold;
+    gap: 40px;
+}
+
+.top-bar ul img{
+    width: 17px;
+    height: 17px;
+}
+
+.top-bar ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.top-bar .text-container{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.top-bar .text-container span{
+    font-weight: lighter;
+}
+
+.top-bar ul li.active{
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    padding: 5px 8px;
+}
+
+.top-bar .home-icon{
+    width: 16px;
+    height: 17px;
+    background: transparent url('img/home_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.doc-info{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 10px;
+}
+
+.img-container{
+    width: 44px;
+    height: 44px;
+}
+
+.img-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.doc-info .image-txt, .setting-icon-txt{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.setting-icon-txt{
+    border-left: rgb(211, 210, 210) solid 2px;
+    padding: 0 15px;
+}
+
+
+/* ---------------------- SIDE BAR ------------------- */
+
+.side-bar{
+    /* flex: 1; */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    position: fixed;
+    top: 80px;
+    height: 100%;
+    width: 300px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding-bottom: 200px;
+}
+
+.side-bar .top-contents{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+/* .side-bar .top-contents img{
+    top: 150px;
+    left: 347px;
+    width: 18px;
+    height: 18px;
+} */
+
+.side-bar .side-contents{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.side-bar .side-contents.active{
+    background: #D8FCF7 0% 0% no-repeat padding-box;
+}
+
+.side-content-name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot{
+    font-size: 32px;
+}
+
+/* --------------- MAIN CONTENT ------------ */
+.body-content{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 315px;
+    gap: 17px;
+}
+
+.main-content{
+    flex: 2;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 600px;
+}
+
+.main-content .diagnosis-history{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-content .history-chart{
+    background: #F4F0FE 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    /* height: 298px; */
+    padding: 0 10px;
+    margin: 20px 15px 5px 15px;
+}
+
+.main-content .chart-txt{
+    padding: 10px 0 0 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.main-content .reading{
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+}
+
+.read-img
+{
+    height: 75px;
+    width: 75px;
+}
+
+.express{
+    margin-top: 25px; 
+    font-size: 10px;
+}
+
+.main-content .respiratory-rate{
+    background: #E0F3FA 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    flex: 1;
+    padding: 15px;
+    /* height: 242px; */
+}
+
+.main-content .temperature{
+    background: #FFE6E9 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    flex: 1;
+    padding: 15px;
+    /* height: 242px; */
+}
+.main-content .heart-rate{
+    background: #FFE6F1 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    flex: 1;
+    padding: 15px;
+    /* height: 242px; */
+}
+/* ---------------- DIAGNOSIS LIST ----------------- */
+.bottom-content{
+    height: 250px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin-top: 15px;
+    border-radius: 16px;
+}
+
+.list-heading{
+    padding: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.heading-bar{
+    display: flex;
+    padding: 10px;
+    margin: 25px 10px 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    list-style: none;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    gap: 80px;
+}
+
+.l-1{
+    margin-left: 100px;
+}
+
+.expression-body-1{
+    display: flex;
+    font-size: 10px;
+    margin: 15px;
+    list-style: none;
+    padding: 5px 0 0 5px;
+    gap: 130px;
+}
+
+.list-expression{
+    display: flex;
+}
+
+.l-2{
+    margin-top: 20px;
+    list-style: none;
+    font-size: 10px;
+    margin-left: 103px;
+}
+
+/* ---------------- RIGHT BAR --------------- */
+
+.right-bar{
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.right-bar .right-bar-content{
+    margin: 15px auto;
+    width: 150px;
+}
+
+.right-bar-content img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.right-bar-content .name-txt{
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.right-bar .basic-info{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.right-bar .info{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.right-bar .basic-info img{
+    margin: 10px 0 0 0;
+    padding-left: 0;
+}
+
+.right-bar .basic-info span{
+    font-weight: bold;
+}
+
+.inform-content{
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    text-align: center;
+    margin: 10px 50px;
+    padding: 5px 0;
+}
+/* ----------------------------------------- */
+@media (max-width: 1060px){
+    .top-bar .logo{
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .side-bar{
+        width: 280px;
+    }
+    .body-content{
+        margin-left: 295px;
+    }
+}
+
+@media (max-width: 970px){
+    .top-bar ul{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 920px){
+    .side-bar{
+        width: 200px;
+    }
+    .body-content{
+        margin-left: 215px;
+    }
+}
+
+@media (max-width: 900px){
+    .top-bar .logo{
+        width: 120px;
+    }
+}
+
+@media (max-width: 870px){
+    .top-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+        gap: 10px;   
+        border-radius: 10px;
+        opacity: 1;
+    }
+    .img-container{
+        width: 30px;
+        height: 30px;
+    }
+
+    .top-bar .logo{
+        margin-left: 0;
+    }
+    .doc-info{
+        margin-top: 7px;
+    }
+    .side-bar{
+        top: 174px;
+    }
+    .body-content{
+        margin-top: 174px;
+    }
+    .main-content .reading{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .inform-content{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 720px){
+    .side-bar{
+        display: none;
+    }
+    .body-content{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 690px){
+    .inform-content{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 505px){
+    .inform-content{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 485px){
+    .top-bar ul{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        /* align-items: center; */
+        /* list-style: none; */
+        /* font-size: 10px; */
+        /* font-weight: bold; */
+    }
+}

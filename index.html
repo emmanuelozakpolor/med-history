@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="top-bar">
+        <div class="logo">
+            <img src="images/TestLogo.svg">
+        </div>
+        <ul class="">
+            <li><img src="images/home_FILL0_wght300_GRAD0_opsz24.svg"><span>Overview</span></li>
+            <li class="active"><img src="images/group_FILL0_wght300_GRAD0_opsz24.svg"><span>Patients</span></li>
+            <li><img src="images/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"><span>Schedule</span></li>
+            <li><img src="images/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"><span>Message</span></li>
+            <li><img src="images/credit_card_FILL0_wght300_GRAD0_opsz24.svg"><span>Transaction</span></li>
+        </ul>
+        <div class="doc-info">
+            <div class="image-txt">
+                <div class="img-container">
+                    <img src="images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"/>
+                </div>
+                <div class="text-container">
+                    <p>Dr. Jose Simmons</p>
+                    <span>General Practitioner</span>
+                </div>
+            </div>
+            <div class="setting-icon-txt">
+                <div class="setting-icon">
+                    <img src="images/settings_FILL0_wght300_GRAD0_opsz24.png">
+                </div>
+                <div class="more-icon">
+                    <img src="images/more_vert_FILL0_wght300_GRAD0_opsz24.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="side-bar">
+        <div class="top-contents">
+            <h3>Patients</h3>
+            <img src="images/search_FILL0_wght300_GRAD0_opsz24.svg">
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 8.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Emily Williams</p>
+                    <span style="color: grey;">Female, 18</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 1.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Ryan Johnson</p>
+                    <span style="color: grey;">Male, 45</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 3.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Brandon Mitchell</p>
+                    <span style="color: grey;">Male, 36</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents active">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 2.2.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;" id="name"></p>
+                    <span id="gender"></span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 6.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Samantha Johnson</p>
+                    <span style="color: grey;">Female, 56</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 10.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Olivia Brown</p>
+                    <span style="color: grey;">Female, 32</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 9.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Tyler Davis</p>
+                    <span style="color: grey;">Male, 19</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 4.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Kevin Anderson</p>
+                    <span style="color: grey;">Male, 30</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 5.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Dylan Thompson</p>
+                    <span style="color: grey;">Male, 36</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/Layer 7.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Nathan Evans</p>
+                    <span style="color: grey;">Male, 58</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+        <div class="side-contents">
+            <div class="side-content-name">
+                <div class="side-contents-img">
+                    <img src="images/pexels-photo-1222271.png">
+                </div>
+                <div class="side-content-txt">
+                    <p style="font-weight: bold;">Mike Nolan</p>
+                    <span style="color: grey;">Male, 31</span>
+                </div>
+            </div>
+            <div class="dot"><img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"></div>
+        </div>
+    </div>
+    <div class="body-content">
+        <div class="main-content">
+            <div class="diagnosis-history">
+                <p>Diagnosis History</p>
+            </div>
+            <div class="history-chart">
+                <div class="chart-txt">
+                    <p>Blood Pressure</p>
+                </div>
+                <div id="chart">
+                    
+                </div>
+            </div>
+            <div class="reading">
+                <div class="respiratory-rate">
+                    <img class="read-img" src="images/respiratory rate.svg">
+                    <p style="font-size: 13px;">Respiratory Rate</p>
+                    <h2>20 bpm</h2>
+                    <p class="express">Normal</p>
+                </div>
+                <div class="temperature">
+                    <img class="read-img" src="images/temperature.svg">
+                    <p style="font-size: 13px;">Temperature</p>
+                    <h2>98.6°F</h2>
+                    <p class="express">Normal</p>
+                </div>
+                <div class="heart-rate">
+                    <img class="read-img" src="images/HeartBPM.svg">
+                    <p style="font-size: 13px;">Heart Rate</p>
+                    <h2>78bpm</h2>
+                    <div class="arrowDownIcon-txt" style="display: flex; align-items: center; gap: 5px;">
+                        <img src="images/ArrowDown.svg" style="margin-top: 25px; height: 4px;">
+                        <p class="express">Lower than Average</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-content">
+                <p class="list-heading">Diagnosis List</p>
+                <ul class="heading-bar">
+                    <li>Problem/Diagnosis</li>
+                    <li>Description</li>
+                    <li class="l-1">Status</li>
+                </ul>
+                <div class="content-body">
+                    <div class="list-expression">
+                        <ul class="expression-body-1">
+                            <li>Hypertension</li>
+                            <li>Chronic high blood Pressure</li>
+                        </ul>
+                        <ul class="l-2">
+                            <li>Under Observation</li>
+                        </ul>
+                    </div>
+                    <div class="list-expression">
+                        <ul class="expression-body-1">
+                            <li>Type 2 diabetes</li>
+                            <li>Insulin resistance and elevated blood sugar</li>
+                        </ul>
+                        <ul class="l-2">
+                            <li>Cured</li>
+                        </ul>
+                    </div>
+                    <div class="list-expression">
+                        <ul class="expression-body-1">
+                            <li>Asthma</li>
+                            <li>Recurrent episodes of bronchial restriction</li>
+                        </ul>
+                        <ul class="l-2">
+                            <li>Inactive</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-bar">
+            <div class="right-bar-content">
+                <img src="images/Layer 2.png">
+                <div class="name-txt">
+                    <p>Jessica Taylor</p>
+                </div>
+            </div>
+            <div class="basic-info">
+                <img src="images/BirthIcon.svg">
+                <div class="info">
+                    <p>Date Of Birth</p>
+                    <span>August 23, 1996</span>
+                </div>
+        </div>
+            <div class="basic-info">
+                <img src="images/FemaleIcon.svg">
+                <div class="info">
+                    <p>Gender</p>
+                    <span>Female</span>
+                </div>
+        </div>
+            <div class="basic-info">
+                <img src="images/PhoneIcon.svg">
+                <div class="info">
+                    <p>Contact info.</p>
+                    <span>(415)555-1234</span>
+                </div>
+        </div>
+            <div class="basic-info">
+                <img src="images/PhoneIcon.svg">
+                <div class="info">
+                    <p>Emergency Contact</p>
+                    <span>(415)555-5678</span>
+                </div>
+        </div>
+            <div class="basic-info">
+                <img src="images//InsuranceIcon.svg">
+                <div class="info">
+                    <p>Insurance Provider</p>
+                    <span>Sunrise Health Assurance</span>
+                </div>    
+            </div>
+            <div class="inform-content">
+                <span>Show All Information</span>
+            </div>
+        </div>
+    </div>   
+</div>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="index.js"></script>
+</body>
+</html>
